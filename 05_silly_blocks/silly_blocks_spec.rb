@@ -1,4 +1,4 @@
-require "silly_blocks"
+require_relative "./silly_blocks"
 
 describe "some silly block functions" do
 
@@ -19,7 +19,7 @@ describe "some silly block functions" do
       # reverser do
       #   "hello"
       # end
-      #
+      #-
       # reverser is still a method, and it should return the reverse of the given string, i.e. "olleh",
       # except the string is not being passed in as a parameter. It's being passed in as a do-end block.
       # The way this method can get that do-end block is through yield.
@@ -54,6 +54,7 @@ describe "some silly block functions" do
       expect(adder do
         5
       end).to eq(6)
+      
       # def adder
       #   num = yield
       #   # what do you want do you with num?

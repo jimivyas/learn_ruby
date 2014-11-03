@@ -1,4 +1,4 @@
-require "simon_says"
+require_relative "./simon_says"
 
 # By now we should be getting better at reading tests. We should able to see
 # what methods will need to be defined and what they need to return.
@@ -36,7 +36,7 @@ describe "Simon says" do
     # Wait a second! How can you make the "repeat" method
     # take one *or* two arguments?
     #
-    # def repeat(string, num = 1)
+    # def repeat(string, num = 2)
     #   # your code here
     # end
     #
