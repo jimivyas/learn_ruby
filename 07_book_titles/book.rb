@@ -1,7 +1,7 @@
 class Book
 
 
-	#shamelessly stolen from simon_say
+	#shamelessly stolen from simon_says
 	
 	def titleize(string)
 		little_words = ["and", "or", "the", "over", "a", "an", "of", "in"]
@@ -17,9 +17,7 @@ class Book
 		words.unshift(first_word)
 		words.join(" ")
 	end
-
-	attr_reader :title
-
+	#
 	def title=(string)
 		@title = titleize(string)
 	end

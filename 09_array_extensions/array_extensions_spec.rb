@@ -1,4 +1,4 @@
-require "array_extensions" # we don't call it "array.rb" since that would be confusing
+require_relative "./array_extensions" # we don't call it "array.rb" since that would be confusing
 
 describe Array do
 
@@ -26,7 +26,7 @@ describe Array do
     end
 
     it "should add all of the elements" do
-      expect([1,2,4]).sum.to eq(7)
+      expect([1, 2, 4]).sum.to eq(7)
     end
   end
 
